@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Lanchonete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Cardápio</h1>
+        <div class="item">
+            <span>Hambúrguer - R$ 15,00</span>
+            <button class="menos" onclick="alterarQuantidade('hamburguer', -1)">-</button>
+            <span id="quantidade-hamburguer">0</span>
+            <button class="mais" onclick="alterarQuantidade('hamburguer', 1)">+</button>
+        </div>
+        <div class="item">
+            <span>Batata Frita - R$ 8,00</span>
+            <button class="menos" onclick="alterarQuantidade('batata', -1)">-</button>
+            <span id="quantidade-batata">0</span>
+            <button class="mais" onclick="alterarQuantidade('batata', 1)">+</button>
+        </div>
+        <div class="item">
+            <span>Refrigerante - R$ 5,00</span>
+            <button class="menos" onclick="alterarQuantidade('refrigerante', -1)">-</button>
+            <span id="quantidade-refrigerante">0</span>
+            <button class="mais" onclick="alterarQuantidade('refrigerante', 1)">+</button>
+        </div>
+        <button id="confirmar" onclick="confirmarPedido()">Confirmar Pedido</button>
+    </div>
+    <div id="resumo" style="display: none;">
+        <h1>Resumo do Pedido</h1>
+        <div id="itens-selecionados"></div>
+        <div id="total-pedido"></div>
+        <a id="enviar-whatsapp" target="_blank">Enviar Pedido pelo WhatsApp</a>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

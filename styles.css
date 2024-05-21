@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#menu, #resumo {
+    text-align: center;
+}
+
+.item {
+    margin: 10px 0;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#confirmar, #resumo button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+#enviar-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
